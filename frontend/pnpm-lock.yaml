@@ -11,7 +11,7 @@ specifiers:
   react-icons: ^4.3.1
   react-modal: ^3.14.4
   react-redux: ^7.2.6
-  react-router-dom: ^6.2.1
+  react-router-dom: ^6.30.3
   react-scripts: 5.0.0
   react-toastify: ^8.1.0
 
@@ -26,7 +26,7 @@ dependencies:
   react-icons: 4.4.0_react@17.0.2
   react-modal: 3.15.1_sfoxds7t5ydpegc3knd667wn6m
   react-redux: 7.2.8_sfoxds7t5ydpegc3knd667wn6m
-  react-router-dom: 6.3.0_sfoxds7t5ydpegc3knd667wn6m
+  react-router-dom: 6.30.3_sfoxds7t5ydpegc3knd667wn6m
   react-scripts: 5.0.0_react@17.0.2
   react-toastify: 8.2.0_sfoxds7t5ydpegc3knd667wn6m
 
@@ -1974,6 +1974,11 @@ packages:
       redux: 4.2.0
       redux-thunk: 2.4.1_redux@4.2.0
       reselect: 4.1.6
+    dev: false
+
+  /@remix-run/router/1.23.2:
+    resolution: {integrity: sha512-Ic6m2U/rMjTkhERIa/0ZtXJP17QUi2CbWE7cqx4J58M8aA3QTfW+2UlQ4psvTX9IO1RfNVhK3pcpdjej7L+t2w==}
+    engines: {node: '>=14.0.0'}
     dev: false
 
   /@rollup/plugin-babel/5.3.1_za5spbk65gc2bmrclluhieacz4:
@@ -5283,12 +5288,6 @@ packages:
     hasBin: true
     dev: false
 
-  /history/5.3.0:
-    resolution: {integrity: sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==}
-    dependencies:
-      '@babel/runtime': 7.18.3
-    dev: false
-
   /hoist-non-react-statics/3.3.2:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
     dependencies:
@@ -8117,6 +8116,12 @@ packages:
   /react-dev-utils/12.0.1_mkwqxzk3byw3tt5etnkhd5uru4:
     resolution: {integrity: sha512-84Ivxmr17KjUupyqzFode6xKhjwuEJDROWKJy/BthkL7Wn6NJ8h4WE6k/exAv6ImS+0oZLRRW5j/aINMHyeGeQ==}
     engines: {node: '>=14'}
+    peerDependencies:
+      typescript: '>=2.7'
+      webpack: '>=4'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
     dependencies:
       '@babel/code-frame': 7.16.7
       address: 1.2.0
@@ -8142,12 +8147,11 @@ packages:
       shell-quote: 1.7.3
       strip-ansi: 6.0.1
       text-table: 0.2.0
+      webpack: 5.73.0
     transitivePeerDependencies:
       - eslint
       - supports-color
-      - typescript
       - vue-template-compiler
-      - webpack
     dev: false
 
   /react-dom/17.0.2_react@17.0.2:
@@ -8231,24 +8235,26 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
-  /react-router-dom/6.3.0_sfoxds7t5ydpegc3knd667wn6m:
-    resolution: {integrity: sha512-uaJj7LKytRxZNQV8+RbzJWnJ8K2nPsOOEuX7aQstlMZKQT0164C+X2w6bnkqU3sjtLvpd5ojrezAyfZ1+0sStw==}
+  /react-router-dom/6.30.3_sfoxds7t5ydpegc3knd667wn6m:
+    resolution: {integrity: sha512-pxPcv1AczD4vso7G4Z3TKcvlxK7g7TNt3/FNGMhfqyntocvYKj+GCatfigGDjbLozC4baguJ0ReCigoDJXb0ag==}
+    engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
       react-dom: '>=16.8'
     dependencies:
-      history: 5.3.0
+      '@remix-run/router': 1.23.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-      react-router: 6.3.0_react@17.0.2
+      react-router: 6.30.3_react@17.0.2
     dev: false
 
-  /react-router/6.3.0_react@17.0.2:
-    resolution: {integrity: sha512-7Wh1DzVQ+tlFjkeo+ujvjSqSJmkt1+8JO+T5xklPlgrh70y7ogx75ODRW0ThWhY7S+6yEDks8TYrtQe/aoboBQ==}
+  /react-router/6.30.3_react@17.0.2:
+    resolution: {integrity: sha512-XRnlbKMTmktBkjCLE8/XcZFlnHvr2Ltdr1eJX4idL55/9BbORzyZEaIkBFDhFGCEWBBItsVrDxwx3gnisMitdw==}
+    engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
     dependencies:
-      history: 5.3.0
+      '@remix-run/router': 1.23.2
       react: 17.0.2
     dev: false
 
